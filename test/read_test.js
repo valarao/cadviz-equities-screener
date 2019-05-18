@@ -1,5 +1,5 @@
 const assert = require('assert');
-const Stock = require('../src/stock');
+const Stock = require('../models/stock');
 
 describe('Reading supplies out of the db', () => {
     it('writing a single stock to db', done => {
