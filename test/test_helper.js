@@ -10,4 +10,12 @@ before(done => {
         .on('error', error => {
             console.warn('Warning', error);
         });
-})
+});
+
+beforeEach(done => {
+    const { stocks } = mongoose.connection.collection;
+    stocks.drop(() => {
+        done();
+    });
+});
+

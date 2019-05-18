@@ -5,6 +5,6 @@ const stockSchema = new Schema({
     name: String
 });
 
-const Stock = mongoose.model('stock', stockSchema);
+const Stock = mongoose.model('stocks', stockSchema);
 
 module.exports = Stock;
