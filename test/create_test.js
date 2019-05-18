@@ -1,5 +1,5 @@
 const assert = require('assert');
-const Stock = require('../models/stock');
+const Stock = require('../database/models/stocks');
 
 describe('Creating records', () => {
     it('saves a stock to db', done => {

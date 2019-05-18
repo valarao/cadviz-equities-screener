@@ -8,6 +8,6 @@ const stockSchema = new Schema({
     mkcap: Number
 });
 
-const Stock = mongoose.model('stocks', stockSchema);
+const Stocks = mongoose.model('stocks', stockSchema);
 
-module.exports = Stock;
+module.exports = Stocks;
