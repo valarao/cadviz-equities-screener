@@ -1,0 +1,29 @@
+{
+  "name": "stock-screener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "mongoose": "^5.5.9",
+    "nodemon": "^1.19.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  },
+  "scripts": {
+    "test": "nodemon --exec 'mocha -R min'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valarao/stock-screener.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valarao/stock-screener/issues"
+  },
+  "homepage": "https://github.com/valarao/stock-screener#readme"
+}
