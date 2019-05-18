@@ -1,5 +1,5 @@
 const assert = require('assert');
-const Stock = require('../database/models/stocks');
+const Stock = require('../database/models/stock');
 
 describe('Updating records', () => {
     let apple;
