@@ -1,10 +1,12 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
+const url = 'mongodb+srv://' + process.env.DB_USER + ':' + process.env.DB_PASS + '@cluster0-dasrq.mongodb.net/test?retryWrites=true';
+
 before(done => {
-    mongoose.connect('mongodb+srv://tookoh:4vrHjVs7SHM8Lt4@cluster0-dasrq.mongodb.net/test?retryWrites=true',
-        { useNewUrlParser: true });
+    mongoose.connect(url, { useNewUrlParser: true });
     mongoose.connection
         .once('open', () => { done(); })
         .on('error', error => {
