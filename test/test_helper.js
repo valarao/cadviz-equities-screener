@@ -13,7 +13,7 @@ before(done => {
 });
 
 beforeEach(done => {
-    const { stocks } = mongoose.connection.collection;
+    const { stocks } = mongoose.connection.collections;
     stocks.drop(() => {
         done();
     });

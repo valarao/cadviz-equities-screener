@@ -7,7 +7,7 @@ describe('Deleting records', () => {
     beforeEach(done => {
         apple = new Stock({ name: 'Apple' });
         apple.save()
-            .then(() => done());
+            .then(() => { done() } );
     });
 
     it('delete a single record from db', done => {
