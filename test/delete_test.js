@@ -1,5 +1,5 @@
 const assert = require('assert');
-const Stock = require('../src/stock');
+const Stock = require('../models/stock');
 
 describe('Deleting records', () => {
     let apple;
