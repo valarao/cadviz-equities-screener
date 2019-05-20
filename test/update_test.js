@@ -9,7 +9,7 @@ describe('Updating records', () => {
             name: 'Apple',
             xchg: 'NYSE',
             ticker: 'AAPL',
-            mkcap: 1000
+            mkcap: 500
         });
 
         apple.save()
