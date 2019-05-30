@@ -7,14 +7,25 @@
     "test": "test"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "body-parser": "^1.19.0",
     "dotenv": "^8.0.0",
+    "express": "^4.17.1",
     "mongoose": "^5.5.9",
-    "nodemon": "^1.19.0"
+    "nodemon": "^1.19.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^3.0.1"
   },
   "devDependencies": {
     "mocha": "^6.1.4"
   },
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "nodemon --exec \"mocha -R min\""
   },
   "repository": {
@@ -26,5 +37,18 @@
   "bugs": {
     "url": "https://github.com/valarao/stock-screener/issues"
   },
-  "homepage": "https://github.com/valarao/stock-screener#readme"
+  "homepage": "https://github.com/valarao/stock-screener#readme",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": []
 }
