@@ -6,11 +6,13 @@ const Stock = require('../models/stock');
  * @return {promise} A promise that resolves with the Stock is deleted
  */
 module.exports = {
-    delete(req, res ,next) {
+    edit(req, res, next) {
         const ticker = req.params.ticker;
+        const stockProps = req.body;
 
-        Stock.findOneAndDelete({ ticker: ticker })
-            .then(stock => res.status(204).send(stock))
+        Stock.findOneAndUpdate({ ticker: ticker }, stockProps)
+            .then(() => Stock.findOne({ ticker: ticker }))
+            .then(stock => res.send(stock))
             .catch(next);
     }
 

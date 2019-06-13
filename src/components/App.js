@@ -3,10 +3,10 @@ import Axios from 'axios';
 import { BrowserRouter, Router } from 'react-router-dom';
 import SearchBar from './SearchBar';
 
-class Screener extends React.Component {
+class App extends React.Component {
   state = { stocks: [] };
 
-    async onSearchSubmit(ticker) {
+    async onSearchSubmit(term) {
       const response = await Axios.get('', {
       });
     }
