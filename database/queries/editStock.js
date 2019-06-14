@@ -1,19 +1,11 @@
 const Stock = require('../models/stock');
 
 /**
- * Deletes a single stock in the Stocks collection.
- * @param {String} ticker - The ticker of the stock to be deleted
- * @return {promise} A promise that resolves with the Stock is deleted
+ * Edits a single artist in the Artists collection
+ * @param {string} _id - The ID of the artist to edit.
+ * @param {object} stockProps - Object containing a name, exchange, ticker, and market capitalization
+ * @return {promise} A promise that resolves when the record is edited
  */
-module.exports = {
-    edit(req, res, next) {
-        const ticker = req.params.ticker;
-        const stockProps = req.body;
-
-        Stock.findOneAndUpdate({ ticker: ticker }, stockProps)
-            .then(() => Stock.findOne({ ticker: ticker }))
-            .then(stock => res.send(stock))
-            .catch(next);
-    }
-
+module.exports = (_id, stockProps) => {
+    Stock.update({ _id }, stockProps);
 };
