@@ -2,7 +2,7 @@ require('dotenv/config');
 const mongoose = require('mongoose');
 const express = require('express');
 const bodyParser = require('body-parser');
-const routes = require('../routes/router');
+const routes = require('../router');
 const App = require('../src/index');
 const Stock = require('./models/stock');
 

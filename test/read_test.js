@@ -2,7 +2,7 @@ const assert = require('assert');
 const Stock = require('../database/models/stock');
 
 describe('Reading records', () => {
-    let apple, amazon, jill;
+    let apple, amazon, bill;
 
     beforeEach(done => {
         apple = new Stock({
@@ -19,11 +19,11 @@ describe('Reading records', () => {
             mkcap: 500
         });
 
-        jill = new Stock({
-            name: 'Jill'
+        bill = new Stock({
+            name: 'Bill'
         });
 
-        Promise.all([apple.save(), amazon.save(), jill.save()])
+        Promise.all([apple.save(), amazon.save(), bill.save()])
             .then(() => done());
     });
 

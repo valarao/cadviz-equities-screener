@@ -20,4 +20,4 @@ class App extends React.Component {
   }
 }
 
-export default Screener;
+export default App;

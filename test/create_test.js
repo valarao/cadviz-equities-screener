@@ -3,10 +3,10 @@ const Stock = require('../database/models/stock');
 
 describe('Creating records', () => {
     it('saves a stock to db', done => {
-        const jill = new Stock({ name: 'Jill' });
-        jill.save()
+        const bill = new Stock({ name: 'Bill' });
+        bill.save()
             .then(() => {
-                assert(!jill.isNew);
+                assert(!bill.isNew);
                 done();
             });
     });
