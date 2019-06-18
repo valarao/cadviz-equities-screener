@@ -59,7 +59,7 @@ def get_metrics(data_file, stock):
         if (regex_trunc == ""):
             regex_trunc = "N/A" 
         stock['Metrics'][curr_metric] = regex_trunc
-        counter = counter + 1
+        counter += 1
 
 
 def write_json_file(stock, ticker):
