@@ -1,20 +1,20 @@
 import React from 'react';
-import Axios from 'axios';
-import { BrowserRouter, Router } from 'react-router-dom';
 import SearchBar from './SearchBar';
+import SearchList from './StockList';
+
 
 class App extends React.Component {
   state = { stocks: [] };
 
-    async onSearchSubmit(term) {
-      const response = await Axios.get('', {
-      });
+  onSearchSubmit = async term => {
+      console.log(term);
     }
   
   render() {
     return (
       <div className="ui container" style={{ marginTop: '10px' }}>
-            <SearchBar onSubmit={this.onSearchSubmit}/>
+        <SearchBar onSubmit={this.onSearchSubmit} />
+        <SearchList stocks={this.state.stocks}/>
       </div>
     );
   }
