@@ -10,10 +10,12 @@ class App extends React.Component {
   onSearchSubmit = async term => {
     const response = await db.get('/api/search/stocks', {
       params: { query: term }
-    }); 
+    }).catch(err => {
+      console.log(err);
+    });
 
     console.log(response);
-  }
+  };
   
   render() {
     return (
