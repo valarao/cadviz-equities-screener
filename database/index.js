@@ -2,14 +2,14 @@ require('dotenv/config');
 const mongoose = require('mongoose');
 const express = require('express');
 const bodyParser = require('body-parser');
-const routes = require('../router');
-const App = require('../src/index');
-const Stock = require('./models/stock');
+const FindQuery = require('./queries/FindStockByTicker');
 
 mongoose.Promise = global.Promise;
 
 const app = express();
 const router = express.Router();
+
+const API_PORT = 3001;
 
 // Url connection to the mongo server
 const url =
@@ -24,17 +24,34 @@ mongoose.connect(url, { useNewUrlParser: true });
 
 let db = mongoose.connection;
 
-db.once('open', () => ReactDOM.render(<App />));
+db.once('open', () => console.log('server is running'));
 db.on('error', error => console.warn('Warning', error));
 
 // Set up body-parser
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-router(app);
+router.get('/search/stocks', async (req, res) => {
+  let ticker = req.params.ticker;
+  FindQuery.FindStockByTicker(ticker, (err, result) => {
+    if (err) {
+      console.log(err);
+      res.status(500).json({
+        success: 0,
+        data: null
+      });
+      return;
+    }
 
-app.use((err, req, res, next) => {
-  res.send({ error: err.message });
+    res.status(200).json({
+      success: 1,
+      data: result
+    });
+  });
 });
 
-module.exports = app;
+// append /api for our http requests
+app.use('/api', router);
+
+// launch our backend into a port
+app.listen(API_PORT, () => console.log(`LISTENING ON PORT ${API_PORT}`));
