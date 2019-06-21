@@ -11,6 +11,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2",
     "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "mongoose": "^5.5.9",
@@ -27,6 +28,7 @@
     "mocha": "^6.1.4"
   },
   "scripts": {
+    "startboth": "concurrently \"npm start\" \"cd database && npm start\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "nodemon --exec \"mocha -R min\""

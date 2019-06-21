@@ -8,7 +8,7 @@ class App extends React.Component {
   state = { stocks: [] };
 
   onSearchSubmit = async term => {
-    const response = await db.get('/search/stocks', {
+    const response = await db.get('/api/search/stocks', {
       params: { query: term }
     }); 
 
