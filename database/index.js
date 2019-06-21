@@ -1,8 +1,9 @@
 require('dotenv/config');
 const mongoose = require('mongoose');
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
-const FindQuery = require('./queries/FindStockByTicker');
+const FindStockByTicker = require('./queries/FindStockByTicker');
 
 mongoose.Promise = global.Promise;
 
@@ -31,24 +32,31 @@ db.on('error', error => console.warn('Warning', error));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+// Set up CORS
+app.use(cors());
+app.options('*', cors());
+
 router.get('/search/stocks', async (req, res) => {
   let ticker = req.params.ticker;
-  FindQuery.FindStockByTicker(ticker, (err, result) => {
-    if (err) {
+
+  FindStockByTicker(ticker)
+    .then(result => {
+      console.log(result);
+      res.status(200).json({
+        success: 1,
+        data: result
+      });
+
+    })
+    .catch(err => {
       console.log(err);
       res.status(500).json({
         success: 0,
         data: null
       });
       return;
-    }
-
-    res.status(200).json({
-      success: 1,
-      data: result
-    });
-  });
-});
+    })
+})
 
 // append /api for our http requests
 app.use('/api', router);

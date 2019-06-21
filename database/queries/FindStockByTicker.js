@@ -8,3 +8,4 @@ const Stock = require('../models/stock');
 module.exports = (ticker) => {
     return Stock.findOne({ ticker: ticker });
 };
+

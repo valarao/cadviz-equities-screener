@@ -28,8 +28,8 @@
     "mocha": "^6.1.4"
   },
   "scripts": {
-    "startboth": "concurrently \"npm start\" \"cd database && npm start\"",
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run start-client\" \"cd database && npm start\"",
+    "start-client": "react-scripts start",
     "build": "react-scripts build",
     "test": "nodemon --exec \"mocha -R min\""
   },
