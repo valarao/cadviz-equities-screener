@@ -1,14 +1,19 @@
 import React from 'react';
 import SearchBar from './SearchBar';
 import SearchList from './StockList';
+import db from '../api/db-api';
 
 
 class App extends React.Component {
   state = { stocks: [] };
 
   onSearchSubmit = async term => {
-      console.log(term);
-    }
+    const response = await db.get('/search/stocks', {
+      params: { query: term }
+    }); 
+
+    console.log(response);
+  }
   
   render() {
     return (
