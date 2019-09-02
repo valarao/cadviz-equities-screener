@@ -1,0 +1,94 @@
+.header {
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 4px;
+  font: 'Calibri';
+  height: 40px;
+}
+
+.description {
+  font: 'Calibri';
+  font-style: italic;
+}
+
+
+.top {
+  background-color: lightblue;
+  overflow: hidden;
+} 
+
+.btn-table { 
+  font-size: 10px;
+  width: 100px;
+  height: 20px;
+  color: white;
+  background-color: grey;
+  padding: 0.1rem 0.7rem;
+ } 
+
+.tableA {
+  font-size: 12px;
+  width: 80%;
+  margin-left:auto; 
+  margin-right:auto;
+  margin-top: 1%;
+}
+
+.tableMain {
+  font-size: 12px;
+  line-height: 2px;
+  height:auto;
+  width: auto;
+  margin-left:5%; 
+  margin-right:5%;
+}
+
+.dropdown-menu{
+  position:absolute;
+  top:100%;
+  left:0;
+  z-index:1000;
+  display:none;
+  float:left;
+  min-width:100px;
+  width:100px;
+  padding:.125rem 0;
+  margin:.125rem 0 0;
+  font-size:12px;
+  color:#212529;
+  text-align:left;
+  list-style:none;
+  background-color:#fff;
+  background-clip:padding-box;
+  border:1px solid rgba(0,0,0,.15);
+  border-radius:.25rem
+}
+
+.dropdown-item {
+  display:block;
+  width:100%;
+  padding:.125rem .75rem;
+  clear:both;
+  font-weight:400;
+  color:#212529;
+  text-align:inherit;
+  white-space:nowrap;
+  background-color:transparent;
+  border:0
+}
+
+
+.dropdown-page {
+  display:block;
+  width:100%;
+  padding:.125rem .75rem;
+  clear:both;
+  font-weight:400;
+  color:red;
+  text-align:inherit;
+  white-space:nowrap;
+  background-color:transparent;
+  border:0
+}
+
+
