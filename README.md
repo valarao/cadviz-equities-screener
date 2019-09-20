@@ -1,4 +1,4 @@
-<h1 align="center">🍁 Cadviz 🍁</h1>
+<h1 align="center">🍁 Cadviz Equities Screener 🍁</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 </p>
@@ -16,6 +16,8 @@ Having used Finviz for narrowing down companies to look at for personal investme
 ### How It Works
 
 Our MongoDB server stores and updates all relevant valuation/performance metrics every 30 minutes, which our front-facing React client queries so you can filter for the company criteria that you care about!
+
+![preview](https://user-images.githubusercontent.com/25139382/65360521-163a6500-dbb5-11e9-81a2-d0478d14ca62.PNG)
 
 ## Install and Run
 
