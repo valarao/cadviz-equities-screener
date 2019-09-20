@@ -1,16 +1,19 @@
 {
-  "name": "react-test",
+  "name": "cadviz-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
+    "classnames": "^2.2.6",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongodb-stitch-browser-sdk": "^4.5.0",
     "mongoose": "^5.6.11",
     "morgan": "^1.9.1",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.12",
+    "react-bootstrap-table-next": "^3.2.0",
     "react-bootstrap-table2-paginator": "^2.0.7",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"

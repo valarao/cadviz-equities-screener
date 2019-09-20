@@ -10,7 +10,7 @@ app.use(cors());
 const router = express.Router();
 
 const spawn = require("child_process").spawn;
-spawn('python',['../data_scraper/scraper.py']);
+spawn('python',['../scraper/scraper.py']);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -40,7 +40,7 @@ router.get('/queryData',(req,res) => {
 });
 
 setInterval(function() {
-    spawn('python',['../data_scraper/scraper.py']);
+    spawn('python',['../scraper/scraper.py']);
     console.log("Updateing Data...");
 },1800000);
 
