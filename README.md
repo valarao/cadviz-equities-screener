@@ -5,7 +5,9 @@
 
 ## About Cadviz
 
-Cadviz is a React app to screen Canadian equities for investment analysis using Python for JSON file parsing and JavaScript for database communication. Every so often, our MongoDB database stores and updates valuation and performancemetrics on 791 TSX-listed Canadian equities for further screening.
+Cadviz is a web app to screen Canadian equities for investment analysis.
+
+We use Python for JSON file parsing and React for the user interface. Every so often, our MongoDB database updates valuation and performance metrics on 791 TSX-listed Canadian equities for further screening.
 
 ### Our Story
 
