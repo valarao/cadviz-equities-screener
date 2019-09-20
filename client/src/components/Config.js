@@ -16,7 +16,7 @@ import React from 'react';
 //P/Book
 //Beta
 //Debt/Equity
-//Debt/EBITA
+//Debt/EBITDA
 //Current Ratio
 //Operating Cash Flow
 //Levered Free Cash Flow

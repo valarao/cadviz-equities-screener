@@ -16,10 +16,10 @@ class App extends Component{
       <div>
         <div className="top">
           <div>
-            < h2 className="header" >NotFinViz!</h2>
+            < h2 className="header" >Cadviz Equities Screener</h2>
           </div>
           <div className="description">
-            "What you tell the numbers."
+            "When they ask you to pay $300/year for premium account, what do you say? Not today."
           </div>
         </div>
         <div>

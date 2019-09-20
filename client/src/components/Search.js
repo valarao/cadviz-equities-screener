@@ -108,7 +108,7 @@ class Search extends Component {
                     <tr>
                         <td>Debt/Equity</td>
                         <td><EntryBox options={DebtEquity} update={this.ChangeDebtEquity} id={DebtEquity}/></td>
-                        <td>Debt/EBITA</td>
+                        <td>Debt/EBITDA</td>
                         <td><EntryBox options={DebtEBITDA} update={this.ChangeDebtEBITDA} id={DebtEBITDA}/></td>
                         <td>Current Ratio</td>
                         <td><EntryBox options={CurrentRatio} update={this.ChangeCurrentRatio} id={CurrentRatio}/></td>
@@ -122,9 +122,9 @@ class Search extends Component {
                         <td><EntryBox options={RevenueGrowth} update={this.ChangeRevenueGrowth} id={RevenueGrowth}/></td>
                         <td>Earnings Growth</td>
                         <td><EntryBox options={EarningGrowth} update={this.ChangeEarningsGrowth} id={EarningGrowth}/></td>
-                        <td>FA Dividend Rate</td>
+                        <td>Dividend Rate</td>
                         <td><EntryBox options={FADividendRate} update={this.ChangeFADividendRate} id={FADividendRate}/></td>
-                        <td>FA Dividend Yield</td>
+                        <td>Dividend Yield</td>
                         <td><EntryBox options={FADividendYield} update={this.ChangeFADividendYield} id={FADividendYield}/></td>
                         <td>Payout Ratio</td>
                         <td><EntryBox options={PayoutRatio} update={this.ChangePayoutRatio} id={PayoutRatio}/></td>
