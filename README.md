@@ -33,13 +33,13 @@ npm run start
 
 ## What We Learned
 
-This project was a great experience for both Miguel and Alan. Neither of us had any prior experience using React and MongoDB, so we're glad we got to develop proficiencies with these two technologies. <b>Top 3 Takeaways:</b>
+This project was a great experience for both Miguel and Alan. Neither of us had any prior experience using React and MongoDB, so we're glad we got to develop proficiencies with these two technologies. <b> Our top 3 Takeaways:</b>
 
 1. <b>Component-based design is elegant.</b> Having built websites in vanilla HTML/CSS, we dreaded having to copy-pasting of whole sections. After learning about React's component system, this project gave us a reason to dabble in it. Our thoughts? We were mind-blown. In fact, when we had to build entry boxes for listing in the display table, we didn't have dreaded duplicate code. 
 
 2. <b>Querying changing data sources necessitates good error-handling.</b> As a basis for companies to screen, we went to the TSX listing page and downloaded the tickers from the sectors we could find. When we first ran the script to get the data, it worked perfectly. When we tried to run it again, it broke. Why? Turns out a few companies disappeared from our dataset after being delisted from the TSX due to bankruptcy or acquisition. We learned we needed to safeguard against this and added the necessary error handlers.
 
-3. <b>Multi-language integration works.</b> When first designing the project structure, we wanted to have access to data-scraping tools that Python had and the powerful front-end frameworks that were on JavaScript. At first, we thought that we had to pick one or the other. When we figured out how to get them work in tandem, we felt our a lot of our constraints had been lifted. 
+3. <b>Multi-language integration works.</b> When first designing the project structure, we wanted to have access to the data-scraping tools that Python had and the powerful front-end frameworks that were built on JavaScript. At first, we thought that we had to pick one or the other. When we figured out how to get them work in tandem, we felt a lot of our constraints had been lifted. 
 
 
 ## Contributors
