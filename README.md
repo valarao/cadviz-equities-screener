@@ -44,7 +44,7 @@ This project was a great experience for both Miguel and Alan. Neither of us had 
 3. <b>Multi-language integration works.</b> When first designing the project structure, we wanted to have access to the data-scraping tools that Python had and the powerful front-end frameworks that were built on JavaScript. At first, we thought that we had to pick one or the other. When we figured out how to get them work in tandem, we felt a lot of our constraints had been lifted. 
 
 
-## Contributors
+## Authors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
